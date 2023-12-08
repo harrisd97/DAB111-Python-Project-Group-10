@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sleep Health Dataset</title>
+</head>
+<body>
+    <h1>Sleep Health Data</h1>
+    
+    <p>Below are the first 10 rows of the Sleep Health and Lifestyle Dataset.</p>
+
+    <table border="3" style="border-collapse: collapse;">
+        <tr>
+            <th>Person ID</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Occupation</th>
+            <th>Sleep Duration</th>
+            <th>Quality of Sleep</th>
+            <th>Physical Activity Level</th>
+            <th>Stress Level</th>
+            <th>BMI Category</th>
+            <th>Blood Pressure</th>
+            <th>Heart Rate</th>
+            <th>Daily Steps</th>
+            <th>Sleep Disorder</th>
+        </tr>
+        {% for s in students %}
+            <tr>
+                <td>{{ s[0] }}</td>
+                <td>{{ s[1] }}</td>
+                <td>{{ s[2] }}</td>
+                <td>{{ s[3] }}</td>
+                <td>{{ s[4] }}</td>
+                <td>{{ s[5] }}</td>
+                <td>{{ s[6] }}</td>
+                <td>{{ s[7] }}</td>
+                <td>{{ s[8] }}</td>
+                <td>{{ s[9] }}</td>
+                <td>{{ s[10] }}</td>
+                <td>{{ s[11] }}</td>
+                <td>{{ s[12] }}</td>
+                <td>{{ s[13] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <p>Access the full dataset on Kaggle: <a href="https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset">Sleep Health and Lifestyle Dataset on Kaggle</a></p>
+
+</body>
+</html>
